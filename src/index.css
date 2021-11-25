@@ -1,0 +1,26 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+   box-sizing: border-box;
+   font-family: "poppins", sans-serif;
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+}
+
+body {
+   position: relative;
+   min-height: 100vh;
+   background: #232526; /* fallback for old browsers */
+   background: -webkit-linear-gradient(
+      to right,
+      #414345,
+      #232526
+   ); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(
+      to right,
+      #414345,
+      #232526
+   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
