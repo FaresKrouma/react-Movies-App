@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar";
 import styled from "styled-components";
@@ -12,6 +12,15 @@ function App() {
    const [trendingType, setTrendingType] = useState("all");
    const [searchValue, setSearchValue] = useState("");
    const [searchType, setSearchType] = useState("");
+
+   useEffect(() => {
+      console.log("yoooo");
+      fetch("http://localhost:4000/users")
+         .then((res) => res.json())
+         .then((res) => {
+            console.log(res);
+         });
+   }, []);
 
    return (
       <BrowserRouter>
