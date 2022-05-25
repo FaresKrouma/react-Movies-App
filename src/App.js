@@ -13,15 +13,6 @@ function App() {
    const [searchValue, setSearchValue] = useState("");
    const [searchType, setSearchType] = useState("");
 
-   useEffect(() => {
-      console.log("yoooo");
-      fetch("http://localhost:4000/users")
-         .then((res) => res.json())
-         .then((res) => {
-            console.log(res);
-         });
-   }, []);
-
    return (
       <BrowserRouter>
          <DivElement>
