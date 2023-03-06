@@ -33,25 +33,7 @@ const Header = ({ setSearchValue, searchType }) => {
                <RiSearchLine size="25px" />
             </button>
          </form>
-         <form
-            className="search-container"
-            onSubmit={(e) => {
-               e.preventDefault();
-               const payload = {
-                  email: e.target.elements.email.value,
-                  password: e.target.elements.password.value,
-               };
-               fetch("http://localhost:4000/login", {
-                  method: "POST",
-                  body: JSON.stringify(payload),
-                  headers: { "Content-Type": " application/json" },
-               })
-                  .then((res) => res.json())
-                  .then((res) => {
-                     console.log(res);
-                  });
-            }}
-         >
+         
             <input
                //    value={search}
                //    onChange={(e) => setSearch(e.target.value)}
